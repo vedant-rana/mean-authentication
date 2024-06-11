@@ -1,0 +1,19 @@
+@if(userData){
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Hello, {{ userData!.name }}</mat-card-title>
+    <mat-card-subtitle>{{ userData!.email }}</mat-card-subtitle>
+  </mat-card-header>
+  <hr />
+  <mat-card-content>
+    <p>Mobile: {{ userData.mobile }}</p>
+    <p>Gender : {{ userData.gender }}</p>
+  </mat-card-content>
+</mat-card>
+}@else {
+<mat-card class="example-card">
+  <mat-card-content>
+    <p>Data Not Found</p>
+  </mat-card-content>
+</mat-card>
+}
